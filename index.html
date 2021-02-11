@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tính lương nhân viên</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="tinhLuongNV">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mt-3"><h3>Thông tin nhân viên</h3></div>
+            </div>
+            <div class="row">
+                <div id="inputNhanVien" class="col-sm-6 inputNV">
+                    <form>
+                        <div class="input-group">
+                            <span class="input-group-text text-white bg-success">Mã NV</span>
+                            <input id="maNV" type="text" name="Mã nhân viên" class="form-control">
+                        </div>
+                        <div class="input-group  mt-2">
+                            <span class="input-group-text text-white bg-success">Tên NV</span>
+                            <input id="tenNV" type="text" name="Tên nhân viên" class="form-control">
+                        </div>
+                        <div class="input-group mt-2">
+                            <span class="input-group-text text-white bg-success">Chức vụ</span>
+                            <select class="form-control" name="Chức vụ" id="chucVu">
+                                <option value="Giám đốc"> Giám đốc </option>
+                                <option value="Quản lý"> Quản lý</option>
+                                <option value="Trà xanh"> Trà xanh</option>
+                            </select>
+                        </div>
+                        <div class="input-group  mt-2">
+                            <span class="input-group-text text-white bg-success">Hệ số lương</span>
+                            <input id="heSoLuong" name="Hệ số lương" type="text" class="form-control">
+                        </div>
+                        <div class="input-group  mt-2">
+                            <span class="input-group-text text-white bg-success">Lương cơ bản</span>
+                            <input id="luongCB" name="Lương cơ bản" type="text" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6 bg-dark">
+                    <h3 class="text-white">Thông tin nhân viên</h3>
+                    <p class="text-warning">Mã nhân viên: <span></span></p>
+                    <p class="text-warning">Tên nhân viên: <span></span></p>
+                    <p class="text-warning">Chức vụ: <span></span></p>
+                    <p class="text-warning">Lương: <span></span></p>
+                </div>
+                <button id="tinhTienLuong" class="btn btn-danger mt-3 ml-3">Tính lương</button>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
